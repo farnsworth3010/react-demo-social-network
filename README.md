@@ -11,13 +11,13 @@ To get started with the Product Demo Calculator, follow these simple steps:
 1. Install dependencies using yarn:
 
 ```bash
-yarn
+$ yarn
 ```
 
 Run the development server:
 
 ```bash
-yarn dev
+$ yarn dev
 ```
 
 # Features 🌟
