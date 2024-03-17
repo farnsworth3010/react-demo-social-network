@@ -1,6 +1,6 @@
 import { Modal, Box } from "@mui/material";
-import { Product } from "../../../interfaces/product";
-import { EditProductForm } from "../../forms/EditProduct/EditProductForm";
+import { IPost } from "../../../interfaces/post";
+import { EditPostForm } from "../../forms/EditPost/EditPostForm";
 
 const style = {
   position: "absolute",
@@ -17,10 +17,10 @@ const style = {
 interface Props {
   open: boolean;
   close: () => void;
-  data: Product;
-  edit: (product: Product) => void;
+  data: IPost;
+  edit: (product: IPost) => void;
 }
-export const EditProductModal = (props: Props) => {
+export const EditPostModal = (props: Props) => {
   const { open, close, data, edit } = props;
   return (
     <Modal
@@ -30,7 +30,7 @@ export const EditProductModal = (props: Props) => {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
-        <EditProductForm data={data} close={close} submit={edit} />
+        <EditPostForm data={data} close={close} submit={edit} />
       </Box>
     </Modal>
   );

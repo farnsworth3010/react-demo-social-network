@@ -4,4 +4,11 @@
 }
 body {
   padding: 2rem;
+  position: relative;
+}
+
+.header {
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 2rem;
 }

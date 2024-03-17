@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.postMargin {
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.addIcon {
+  position: fixed !important;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  button {
+    margin-bottom: 2rem;
+  }
+}

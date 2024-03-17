@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import { Calc } from "./Calc/Calc";
+import { Posts } from "./Posts/Posts";
+import { AddPost } from "./AddPost/AddPost";
+import { Home } from "./Home/Home";
+import { ViewPost } from "./ViewPost/ViewPost";
 
 const router = createBrowserRouter([
   {
@@ -8,8 +11,20 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "",
-        element: <Calc />,
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/posts",
+        element: <Posts />,
+      },
+      {
+        path: "/post/:id",
+        element: <ViewPost />,
+      },
+      {
+        path: "/add-post",
+        element: <AddPost />,
       },
     ],
   },
